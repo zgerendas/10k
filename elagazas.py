@@ -89,3 +89,4 @@ if egesz % 3 == 0:
     print("Osztható")
 else:
     print("Nem osztható")
+
