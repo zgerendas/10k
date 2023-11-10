@@ -1,17 +1,21 @@
 import random
-'''
-for i in range(10):
-    print(random.random())
-
-for i in range(1000):
-    print(random.randint(1,100),end=',')
-'''
+random.seed(1)
 gondolt = random.randint(1,100)
-ismetled = True
-
-while ismetled:
-    egesz = int(input("Kérek egy számot 1 és 100 között: "))
-    if egesz < 1 or egesz > 100:
-        print("Hibás szám")
+ismeteld = True
+tippSzam = 0
+while ismeteld:
+    egesz = 0
+    while egesz < 1 or egesz > 100:
+        egesz = int(input("Kérek egy számot 1 és 100 között: "))
+    tippSzam += 1
+    if gondolt < egesz:
+        print("Nagy")
+    elif gondolt > egesz:
+        print("Kicsi")
     else:
-        ismetled = False
+        print(tippSzam,"Lépesben talált!!")
+        ismeteld = False
+        #break
+
+
+
