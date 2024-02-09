@@ -114,7 +114,7 @@ for sz in szemelyek:
     db +=1
 #print(osszeg/db)
 print(osszeg/len(szemelyek))
-
+   
 
 for sz in szemelyek:
     sz["kor"] +=1
